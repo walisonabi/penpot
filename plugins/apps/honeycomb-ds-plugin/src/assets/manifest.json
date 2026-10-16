@@ -1,0 +1,12 @@
+{
+  "name": "Honeycomb Design System",
+  "description": "Import Honeycomb generated_docs components (HexaButton set) into Penpot",
+  "code": "/assets/plugin.js",
+  "icon": "/assets/icon.png",
+  "permissions": [
+    "content:read",
+    "content:write",
+    "library:read",
+    "library:write"
+  ]
+}

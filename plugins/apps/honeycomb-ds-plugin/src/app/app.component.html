@@ -1,0 +1,13 @@
+<main class="panel">
+  <h1>Honeycomb → Penpot</h1>
+  <p class="hint">
+    O spec do <strong>HexaButton / Primary / Medium</strong> já está no
+    <code>plugin.js</code> (gerado com <code>pnpm run sync-spec</code>).
+  </p>
+
+  <button type="button" class="primary" [disabled]="busy()" (click)="createButton()">
+    Criar componente
+  </button>
+
+  <p class="status">{{ status() }}</p>
+</main>

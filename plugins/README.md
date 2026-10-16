@@ -72,6 +72,7 @@ is provided below.
 | rename-layers-plugin    | Rename layers in bulk                                       | 4202 | pnpm run start:plugin:renamelayers     | http://localhost:4202/assets/manifest.json |
 | colors-to-tokens-plugin | Generate tokens JSON file                                   | 4202 | pnpm run start:plugin:colors-to-tokens | http://localhost:4202/assets/manifest.json |
 | poc-tokens-plugin       | Sandbox plugin to test tokens functionality                 | 4202 | pnpm run start:plugin:poc-tokens       | http://localhost:4202/assets/manifest.json |
+| honeycomb-ds-plugin     | Honeycomb generated_docs → HexaButton component set (36 variants) | 4202 | pnpm run start:plugin:honeycomb-ds     | http://localhost:4202/assets/manifest.json |
 
 ## Web Apps
 

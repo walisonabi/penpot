@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/main.ts",
+    "src/app/**/*.ts",
+    "src/lib/**/*.ts",
+    "src/builders/**/*.ts"
+  ],
+  "exclude": ["src/plugin.ts", "src/**/*.spec.ts", "src/**/*.test.ts"],
+  "compilerOptions": {
+    "types": [],
+    "paths": {
+      "@penpot/plugin-types": ["../../libs/plugin-types/index.d.ts"]
+    }
+  }
+}

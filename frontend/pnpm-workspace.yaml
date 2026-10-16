@@ -8,15 +8,15 @@ packages:
   - "packages/ui"
 
 patchedDependencies:
-  '@zip.js/zip.js@2.8.34': patches/@zip.js__zip.js@2.8.26.patch
+  "@zip.js/zip.js@2.8.34": patches/@zip.js__zip.js@2.8.26.patch
 
 shamefullyHoist: true
 
 minimumReleaseAge: 0
 
 allowBuilds:
-  '@parcel/watcher': true
-  canvas: true
+  "@parcel/watcher": true
+  canvas: false
   core-js-pure: true
   esbuild: true
 

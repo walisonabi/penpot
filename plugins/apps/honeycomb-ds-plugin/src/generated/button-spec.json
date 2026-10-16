@@ -1,0 +1,9 @@
+{
+  "height": 40,
+  "horizontalPadding": 16,
+  "borderRadius": 9999,
+  "fontSize": 16,
+  "backgroundHex": "#141414",
+  "textHex": "#ffffff",
+  "minWidth": 129
+}

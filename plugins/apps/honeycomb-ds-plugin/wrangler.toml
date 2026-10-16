@@ -1,0 +1,8 @@
+name = "honeycomb-ds-plugin"
+compatibility_date = "2025-01-01"
+
+assets = { directory = "../../dist/apps/honeycomb-ds-plugin" }
+
+[[routes]]
+pattern = "WORKER_URI"
+custom_domain = true

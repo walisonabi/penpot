@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": ["vitest/globals", "vitest/importMeta", "node", "vitest"],
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "src/lib/**/*.ts",
+    "src/builders/**/*.ts"
+  ],
+  "exclude": ["src/plugin.ts"]
+}

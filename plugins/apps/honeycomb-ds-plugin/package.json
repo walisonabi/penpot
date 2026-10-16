@@ -1,0 +1,19 @@
+{
+  "name": "honeycomb-ds-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-spec": "pnpm exec esbuild scripts/sync-spec.ts --bundle --platform=node --format=esm --outfile=scripts/.sync-spec.mjs && node scripts/.sync-spec.mjs",
+    "build": "pnpm run sync-spec && ng build honeycomb-ds-plugin && pnpm run build:plugin",
+    "build:dev": "ng build honeycomb-ds-plugin --configuration development",
+    "build:plugin": "node ../../tools/scripts/build-plugin.mjs --plugin=honeycomb-ds-plugin",
+    "watch": "node ../../tools/scripts/build-plugin.mjs --plugin=honeycomb-ds-plugin --watch",
+    "serve": "ng serve honeycomb-ds-plugin",
+    "serve:assets": "node ../../tools/scripts/serve-static.mjs --root=src --port=4202",
+    "init": "pnpm run sync-spec && concurrently --kill-others --names plugin,serve \"pnpm run watch\" \"pnpm run serve:assets\"",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "packageManager": "pnpm@12.8.1+sha512.f64ba907507f5ceafe06c8d38e6052d0179444580ec1279ddd5bfc11cb48aa8a2644b66598e07e761da84872a9fc57d5f902b87fa49d024198d558612aabbe45"
+}

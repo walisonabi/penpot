@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Honeycomb</title>
+    <style>
+      body {
+        font: 13px/1.4 system-ui, sans-serif;
+        margin: 12px;
+        color: #222;
+      }
+      h1 {
+        font-size: 15px;
+        margin: 0 0 8px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 8px 0;
+      }
+      button {
+        font: inherit;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.55;
+        cursor: default;
+      }
+      #log {
+        margin: 0;
+        white-space: pre-wrap;
+        max-height: 200px;
+        overflow: auto;
+        background: #f4f4f4;
+        padding: 8px;
+        border-radius: 6px;
+      }
+      .muted {
+        color: #666;
+        margin: 0 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Honeycomb → Penpot</h1>
+    <p class="muted" id="meta">Conectando ao plugin…</p>
+    <p class="muted">
+      Antes do import: instale a fonte
+      <code>sting-honeycomb-flutter/dsms/hexa/fonts/dm_tada/DMTaDa.ttf</code>
+      no Penpot (fontes customizadas).
+    </p>
+    <div class="row">
+      <button id="import" type="button" disabled>Importar componentes</button>
+      <button id="smoke" type="button" disabled>Smoke test</button>
+    </div>
+    <pre id="log">Aguardando handshake…</pre>
+    <script>
+      const logEl = document.getElementById('log');
+      const meta = document.getElementById('meta');
+      const importBtn = document.getElementById('import');
+      const smokeBtn = document.getElementById('smoke');
+      const lines = [];
+
+      function append(line) {
+        lines.push(line);
+        logEl.textContent = lines.join('\n');
+        logEl.scrollTop = logEl.scrollHeight;
+      }
+
+      function setBusy(busy) {
+        importBtn.disabled = busy;
+        smokeBtn.disabled = busy;
+      }
+
+      window.addEventListener('message', (event) => {
+        const data = event.data;
+        if (!data || typeof data !== 'object') return;
+
+        if (data.type === 'plugin-ready') {
+          const comps = (data.components || [])
+            .map((c) => c.name + ' ×' + c.variants)
+            .join(', ');
+          meta.textContent = comps
+            ? 'Bundle: ' + comps
+            : 'Bundle vazio — rode pnpm run sync-spec';
+          const skipped = (data.coverage && data.coverage.withoutBuilder) || [];
+          if (skipped.length) {
+            append(
+              'Sem builder (' +
+                skipped.length +
+                '): ' +
+                skipped.slice(0, 8).join(', ') +
+                (skipped.length > 8 ? '…' : ''),
+            );
+          }
+          append('Plugin pronto. Clique em Importar ou Smoke test.');
+          setBusy(false);
+          return;
+        }
+
+        if (data.type === 'progress') {
+          append(data.content);
+          return;
+        }
+
+        if (data.type === 'import-result') {
+          setBusy(false);
+          if (data.content.ok) {
+            append('OK: ' + data.content.message);
+            (data.content.warnings || []).forEach((w) => append('⚠ ' + w));
+          } else {
+            append('Erro: ' + data.content.hint);
+          }
+        }
+      });
+
+      importBtn.addEventListener('click', () => {
+        setBusy(true);
+        append('Solicitando import…');
+        parent.postMessage({ type: 'import' }, '*');
+      });
+
+      smokeBtn.addEventListener('click', () => {
+        setBusy(true);
+        append('Solicitando smoke test…');
+        parent.postMessage({ type: 'smoke' }, '*');
+      });
+
+      // Handshake: only import after the panel can receive messages.
+      parent.postMessage({ type: 'ready' }, '*');
+    </script>
+  </body>
+</html>

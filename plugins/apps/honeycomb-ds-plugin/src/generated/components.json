@@ -1,0 +1,2330 @@
+{
+  "version": 1,
+  "components": [
+    {
+      "styleDataRef": "button",
+      "kind": "componentSet",
+      "name": "HexaButton",
+      "axes": [
+        "variant",
+        "size",
+        "state"
+      ],
+      "variants": [
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#585858",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral60"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "small",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "medium",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "medium",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#585858",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral60"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "medium",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#585858",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral60"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "primary",
+            "size": "large",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "small",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "foundationBorderDefault",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "small",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "primitiveTransparentBlack12"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "small",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "foundationBorderDisabled",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "medium",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "foundationBorderDefault",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "medium",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "primitiveTransparentBlack12"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "medium",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "foundationBorderDisabled",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "foundationBorderDefault",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "primitiveTransparentBlack12"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "secondary",
+            "size": "large",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0.12156862745098039,
+              "token": "foundationBorderDisabled",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "small",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "primitiveTransparentBlack8"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "small",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.1607843137254902,
+              "token": "primitiveTransparentBlack16"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.4,
+              "token": "primitiveTransparentBlack40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "small",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "medium",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "primitiveTransparentBlack8"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "medium",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.1607843137254902,
+              "token": "primitiveTransparentBlack16"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.4,
+              "token": "primitiveTransparentBlack40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "medium",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "primitiveTransparentBlack8"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral100"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.1607843137254902,
+              "token": "primitiveTransparentBlack16"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.4,
+              "token": "primitiveTransparentBlack40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "tertiary",
+            "size": "large",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#fafafa",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral10"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "small",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "small",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 0.6,
+              "token": "primitiveTransparentWhite40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "small",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 32,
+              "token": null
+            },
+            "minWidth": {
+              "value": 117,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 8,
+              "token": "xSmall"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 14,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.14,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "medium",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "medium",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 0.6,
+              "token": "primitiveTransparentWhite40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "medium",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 40,
+              "token": null
+            },
+            "minWidth": {
+              "value": 129,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 16,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.5,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "large",
+            "state": "default"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#ffffff",
+              "opacity": 0,
+              "token": "primitiveTransparentWhite0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 1,
+              "token": "primitiveSolidNeutral0"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "large",
+            "state": "pressed"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#e53c32",
+              "opacity": 1,
+              "token": "foundationBgErrorDefault"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#ffffff",
+              "opacity": 0.6,
+              "token": "primitiveTransparentWhite40"
+            }
+          }
+        },
+        {
+          "props": {
+            "variant": "destructive",
+            "size": "large",
+            "state": "disabled"
+          },
+          "layout": {
+            "height": {
+              "value": 48,
+              "token": null
+            },
+            "minWidth": {
+              "value": 157,
+              "token": null
+            },
+            "horizontalPadding": {
+              "value": 16,
+              "token": "medium"
+            },
+            "borderRadius": {
+              "value": 9999,
+              "token": "borderRadiusFull"
+            }
+          },
+          "fills": {
+            "background": {
+              "hex": "#141414",
+              "opacity": 0.0784313725490196,
+              "token": "foundationBgDisabled"
+            }
+          },
+          "strokes": {
+            "border": {
+              "hex": "#141414",
+              "opacity": 0,
+              "token": "primitiveTransparentBlack0",
+              "width": 1
+            }
+          },
+          "label": {
+            "text": "Button",
+            "fontSize": {
+              "value": 18,
+              "token": null
+            },
+            "fontWeight": {
+              "value": "600",
+              "token": "contentSemiboldNormal"
+            },
+            "fontFamily": {
+              "value": "DMTaDa",
+              "token": "content"
+            },
+            "lineHeight": {
+              "value": 1.33,
+              "token": null
+            },
+            "color": {
+              "hex": "#141414",
+              "opacity": 0.3215686274509804,
+              "token": "foundationTxtDisabled"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "widgetsInDocs": [
+      "button"
+    ],
+    "withBuilder": [
+      "button"
+    ],
+    "withoutBuilder": []
+  }
+}

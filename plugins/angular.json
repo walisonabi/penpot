@@ -367,6 +367,80 @@
         }
       }
     },
+    "honeycomb-ds-plugin": {
+      "projectType": "application",
+      "root": "apps/honeycomb-ds-plugin",
+      "sourceRoot": "apps/honeycomb-ds-plugin/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": {
+              "base": "dist/apps/honeycomb-ds-plugin",
+              "browser": ""
+            },
+            "index": "apps/honeycomb-ds-plugin/src/index.html",
+            "browser": "apps/honeycomb-ds-plugin/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "apps/honeycomb-ds-plugin/tsconfig.app.json",
+            "assets": [
+              "apps/honeycomb-ds-plugin/src/_headers",
+              "apps/honeycomb-ds-plugin/src/favicon.ico",
+              "apps/honeycomb-ds-plugin/src/manifest.json",
+              "apps/honeycomb-ds-plugin/src/assets"
+            ],
+            "styles": [
+              "libs/plugins-styles/src/lib/styles.css",
+              "apps/honeycomb-ds-plugin/src/styles.css"
+            ],
+            "scripts": [],
+            "optimization": {
+              "scripts": true,
+              "styles": true,
+              "fonts": false
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "honeycomb-ds-plugin:build:production"
+            },
+            "development": {
+              "buildTarget": "honeycomb-ds-plugin:build:development",
+              "host": "0.0.0.0",
+              "port": 4202
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
     "colors-to-tokens-plugin": {
       "projectType": "application",
       "root": "apps/colors-to-tokens-plugin",
